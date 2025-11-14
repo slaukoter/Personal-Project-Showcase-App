@@ -1,0 +1,222 @@
+:root {
+  --verde: #00b140;
+  --black: #0a0a0a;
+  --gray-light: #f4f4f4;
+  --gray-dark: #333;
+  --white: #ffffff;
+  --radius: 8px;
+  --transition: 0.2s ease-in-out;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--gray-light);
+  color: var(--black);
+}
+
+/*HEADER*/
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: var(--black);
+  color: var(--white);
+  border-bottom: 4px solid var(--verde);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  color: var(--gray-light);
+}
+
+/*NAVBAR*/
+
+nav {
+  text-align: center;
+  background: var(--black);
+  padding: 0.75rem 0;
+  border-bottom: 2px solid var(--verde);
+}
+
+nav a {
+  color: var(--white);
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: var(--transition);
+}
+
+nav a:hover {
+  color: var(--verde);
+}
+
+/*PAGE LAYOUT*/
+
+main {
+  padding: 2rem;
+}
+
+/*SHOP GRID*/
+
+.soccer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/*CARD*/
+
+.soccer-card {
+  background: var(--white);
+  padding: 1.2rem;
+  border-radius: var(--radius);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  transition: var(--transition);
+}
+
+.soccer-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.25);
+}
+
+.soccer-card h3 {
+  margin-top: 0;
+  color: var(--black);
+}
+
+.soccer-card p {
+  margin: 0.4rem 0;
+  color: var(--gray-dark);
+}
+
+.soccer-card a {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.5rem 1rem;
+  background: var(--verde);
+  color: var(--black);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+
+.soccer-card a:hover {
+  background: #03d45b;
+}
+
+/*DETAIL PAGE*/
+
+section {
+  max-width: 800px;
+  margin: auto;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: var(--black);
+}
+
+section a {
+  color: var(--verde);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+section a:hover {
+  text-decoration: underline;
+}
+
+/*FORMS (Admin Page)*/
+
+form {
+  background: var(--white);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  margin-bottom: 2rem;
+}
+
+form label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.4rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--gray-dark);
+}
+
+form button {
+  padding: 0.6rem 1.2rem;
+  background: var(--verde);
+  color: var(--black);
+  border: none;
+  border-radius: var(--radius);
+  font-weight: bold;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+form button:hover {
+  background: #03d45b;
+}
+
+/*TABLE (Admin items list)*/
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+table th {
+  background: var(--black);
+  color: var(--white);
+  padding: 0.75rem;
+}
+
+table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #ddd;
+}
+
+table button {
+  background: var(--verde);
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: var(--transition);
+  font-weight: bold;
+}
+
+table button:hover {
+  background: #03d45b;
+}
+
+/* -------------------- FOOTER -------------------- */
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--black);
+  color: var(--white);
+  border-top: 4px solid var(--verde);
+  margin-top: 3rem;
+}

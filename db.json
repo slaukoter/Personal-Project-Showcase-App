@@ -1,0 +1,40 @@
+{
+  "store_info": [
+    {
+      "id": 1,
+      "name": "The Soccer Corner",
+      "description": "Your go-to store for soccer gear and merchandise.",
+      "phone_number": "555-1234"
+    }
+  ],
+  "soccer": [
+    {
+      "id": 1,
+      "name": "FIFA World Cup 26 Trionda Soccer Ball",
+      "description": "Combines performance-driven design with FIFA Quality certification.",
+      "brand": "Adidas",
+      "price": 44.99
+    },
+    {
+      "id": 2,
+      "name": "Mercurial Cleats",
+      "description": "Lightweight cleats designed for explosive forwards.",
+      "brand": "Nike",
+      "price": 177.94
+    },
+    {
+      "id": 3,
+      "name": "Austin Home Jersey",
+      "description": "Official home jersey for Austin FC.",
+      "brand": "Adidas",
+      "price": 89.99
+    },
+    {
+      "id": 4,
+      "name": "Goalkeeper Gloves",
+      "description": "High-grip gloves with excellent wrist support.",
+      "brand": "Reusch",
+      "price": 85.99
+    }
+  ]
+}
